@@ -1,0 +1,303 @@
+/* ========== Font ========== */
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora.ttf");
+}
+
+/* ========== Nền chính ========== */
+.root {
+  -fx-background-color: #ffffff;  /* lavender blush */
+}
+
+/* ========== Wrapper ========== */
+.app-container {
+  -fx-pref-width: 900px;
+  -fx-pref-height: 600px;
+  -fx-background-color: #ffffff;  /* honeydew */
+  -fx-background-radius: 30px;
+  -fx-border-radius: 30px;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 16, 0, 0, 6);
+  -fx-padding: 30px;
+}
+
+/* ========== Sidebar ========== */
+.sidebar {
+  -fx-background-color: #ffebe7;
+  -fx-background-radius: 0 30px 30px 0;
+  -fx-padding: 30px 20px;
+}
+
+/* Ẩn hoàn toàn background mặc định, chỉ giữ text */
+.toggle-button {
+  -fx-background-color: transparent !important;
+  -fx-background-insets: 0 !important;
+  -fx-border-color: transparent !important;
+  -fx-text-fill: #2C3E50 !important;
+  -fx-font-family: "Lora";
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-cursor: hand;
+  -fx-padding: 10px 20px;
+  -fx-max-width: Infinity;
+  -fx-background-radius: 30px 30px 30px 30px;
+  -fx-alignment: CENTER_LEFT;
+}
+
+/* Khi hover hoặc selected mới show màu pastel */
+.toggle-button.btn-dashboard:hover,
+.toggle-button.btn-dashboard:selected {
+  -fx-background-color: #FFD1DC !important;
+}
+.toggle-button.btn-orders:hover,
+.toggle-button.btn-orders:selected {
+  -fx-background-color: #C8E6C9 !important;
+}
+.toggle-button.btn-products:hover,
+.toggle-button.btn-products:selected {
+  -fx-background-color: #BBDEFB !important;
+}
+.toggle-button.btn-customers:hover,
+.toggle-button.btn-customers:selected {
+  -fx-background-color: #E1BEE7 !important;
+}
+
+/* ========== Sales area ========== */
+.sales-container {
+  -fx-background-color: #FFFBF0;
+  -fx-background-radius: 30px 0 0 30px;
+  -fx-padding: 30px;
+}
+
+/* ========== Headers ========== */
+.label-pos {
+  -fx-font-family: "Lora";
+  -fx-font-size: 28px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #2C3E50;
+}
+.label-sales {
+  -fx-font-family: "Lora";
+  -fx-font-size: 26px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #2C3E50;
+}
+
+/* ========== Products grid ========== */
+.products-grid {
+  -fx-padding: 10px 10px 10px 10px;
+}
+
+/* ========== Product card ========== */
+.product-card {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 16px;
+  -fx-padding: 10px;
+  -fx-cursor: hand;
+  -fx-border-color: transparent;
+  -fx-border-width: 0;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0, 0, 4);
+}
+
+.product-card:hover {
+  -fx-background-color: #FFFFFF;
+}
+
+.product-card:focused {
+  -fx-background-color: #FFFFFF;
+}
+.product-name {
+  -fx-font-size: 15px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #2C3E50;
+}
+
+.product-price {
+  -fx-font-size: 14px;
+  -fx-text-fill: #ff0000;
+}
+
+
+/*UI*/
+/* Tiêu đề pane */
+.pane-title {
+  -fx-font-family: "Lora";
+  -fx-font-size: 18px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #2c3e50;
+  -fx-padding: 0 0 10 0;
+  -fx-border-color: transparent transparent #ddd transparent;
+  -fx-border-width: 0 0 1px 0;
+  -fx-border-style: solid;
+}
+
+/* Tiêu đề chính */
+.label-title {
+  -fx-font-family: "Lora";
+  -fx-font-size: 22px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #2c3e50;
+}
+
+/* Nút chung */
+.btn, .button {
+  -fx-background-radius: 8px;
+  -fx-padding: 10 20;
+  -fx-cursor: hand;
+  -fx-font-weight: bold;
+}
+
+/* Nút chính */
+.btn-primary {
+  -fx-background-color: #2196F3;
+  -fx-text-fill: white;
+}
+.btn-primary:hover {
+  -fx-background-color: #1976D2;
+}
+
+/* Nút thành công */
+.btn-success {
+  -fx-background-color: #4CAF50;
+  -fx-text-fill: white;
+}
+.btn-success:hover {
+  -fx-background-color: #388E3C;
+}
+/* ========================
+   Button Styles - Pastel
+   ======================== */
+
+/* Nút Dashboard */
+.btn-dashboard {
+  -fx-background-color: #FFD1DC;   /* pastel hồng nhạt */
+  -fx-text-fill: #2c3e50;          /* chữ đậm dễ đọc */
+  -fx-font-family: "Lora";         
+  -fx-font-size: 14px;
+}
+.btn-dashboard:hover {
+  -fx-background-color: #FFB3C6;
+}
+
+/* Nút Orders */
+.btn-orders {
+  -fx-background-color: #C8E6C9;   /* pastel xanh lá nhạt */
+  -fx-text-fill: #2c3e50;
+  -fx-font-family: "Lora";
+  -fx-font-size: 14px;
+}
+.btn-orders:hover {
+  -fx-background-color: #AEDCB7;
+}
+
+/* Nút Products */
+.btn-products {
+  -fx-background-color: #BBDEFB;   /* pastel xanh dương nhạt */
+  -fx-text-fill: #2c3e50;
+  -fx-font-family: "Lora";
+  -fx-font-size: 14px;
+}
+.btn-products:hover {
+  -fx-background-color: #9FC9F5;
+}
+
+/* Nút Customers */
+.btn-customers {
+  -fx-background-color: #E1BEE7;   /* pastel tím nhạt */
+  -fx-text-fill: #2c3e50;
+  -fx-font-family: "Lora";
+  -fx-font-size: 14px;
+}
+.btn-customers:hover {
+  -fx-background-color: #C69FD8;
+}
+
+/* Nút Primary chung (ghi đè nhẹ để hài hoà pastel) */
+.btn-primary {
+  -fx-background-color: #FFECB3;  /* pastel vàng nhạt */
+  -fx-text-fill: #2c3e50;
+}
+.btn-primary:hover {
+  -fx-background-color: #FFE082;
+}
+
+/* Nút Success chung */
+.btn-success {
+  -fx-background-color: #C5E1A5;  /* pastel xanh nhạt */
+  -fx-text-fill: #2c3e50;
+}
+.btn-success:hover {
+  -fx-background-color: #AED581;
+}
+
+/* Nút Danger chung */
+.btn-danger {
+  -fx-background-color: #FFCDD2;  /* pastel đỏ nhạt */
+  -fx-text-fill: #2c3e50;
+}
+.btn-danger:hover {
+  -fx-background-color: #EF9A9A;
+}
+
+/* Nút Warning chung */
+.btn-warning {
+  -fx-background-color: #FFE0B2;  /* pastel cam nhạt */
+  -fx-text-fill: #2c3e50;
+}
+.btn-warning:hover {
+  -fx-background-color: #FFCC80;
+}
+
+/* Nút Info chung */
+.btn-info {
+  -fx-background-color: #B3E5FC;  /* pastel xanh biển nhạt */
+  -fx-text-fill: #2c3e50;
+}
+.btn-info:hover {
+  -fx-background-color: #81D4FA;
+}
+
+/* Input và ComboBox */
+.text-input {
+  -fx-background-radius: 4px;
+  -fx-border-radius: 4px;
+  -fx-border-color: #ccc;
+  -fx-padding: 6 10;
+}
+.text-input:focused {
+  -fx-border-color: #2196F3;
+  -fx-effect: dropshadow(gaussian, rgba(33,150,243,0.2), 6, 0, 0, 0);
+}
+.combo-box {
+  -fx-background-radius: 4px;
+  -fx-border-radius: 4px;
+  -fx-border-color: #ccc;
+}
+
+/* Sản phẩm */
+.product-name {
+  -fx-font-family: "Segoe UI";
+  -fx-font-weight: bold;
+  -fx-text-fill: #2c3e50;
+  -fx-padding: 8 0 4 0;
+}
+.product-price {
+  -fx-font-size: 14px;
+  -fx-text-fill: #555;
+}
+
+/* Label chung */
+.label {
+  -fx-font-family: "Lora";
+  -fx-font-size: 16px;
+  -fx-text-fill: #2c3e50;
+}
+.fill {
+  -fx-hgrow: always;
+}
+.btn-toggle-chat {
+  -fx-background-color: #007bff;
+  -fx-text-fill: white;
+  -fx-padding: 10 20;
+  -fx-font-size: 14px;
+  -fx-background-radius: 5;
+}
